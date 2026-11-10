@@ -24,8 +24,8 @@ export const ArticleCard = (props: ArticleCardType) => {
 
   return (
     <Link href={`news/${slug}`}>
-      <div className="mb-10 w-94 h-125 flex flex-col rounded-2xl border border-[#E7E5E4] bg-[#FFFFFF] overflow-hidden">
-        <div className="w-full h-58.75 flex flex-col justify-between lg:p-4 relative ">
+      <div className="w-full h-125 flex flex-col rounded-2xl border border-[#E7E5E4] bg-[#FFFFFF] overflow-hidden">
+        <div className="w-full h-58.75 flex flex-col justify-between p-4 relative ">
           <img src={image} alt={imageAlt} className="w-full h-58.75 absolute inset-0 object-cover z-0" />
           <div className="w-15.5 h-6.75 flex justify-center items-center rounded-[100px] py-1.5 px-3 bg-[#ECFDF5] font-bold text-[10px] leading-[145%] text-[#065F46] z-1">{category}</div>
           <div className="w-19.75 h-4.25 flex gap-1.5 z-1">
@@ -37,8 +37,8 @@ export const ArticleCard = (props: ArticleCardType) => {
 
         <div className="w-full h-65.75 flex flex-col p-6 justify-between">
           <div className="w-full h-28.5 flex flex-col gap-3">
-            <p className="w-full h-14 font-bold text-xl leading-[138%] text-[#1C1917]">{title}</p>
-            <p className="w-full h-11.5 font-normal text-sm leading-[163%] text-[#57534E]">{description}</p>
+            <p className="w-full h-fit font-bold text-xl leading-[138%] text-[#1C1917]">{title}</p>
+            <p className="w-full h-fit font-normal text-sm leading-[163%] text-[#57534E]">{description}</p>
           </div>
 
           <div className="w-full h-14.25 flex flex-col gap-4">
