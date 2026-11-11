@@ -26,7 +26,7 @@ export const ArticleCard = (props: ArticleCardType) => {
     .join("");
 
   return (
-    <Link href={`news/${slug}`}>
+    <Link href={`/news/${slug}`}>
       <div className="w-87.5 h-125 flex flex-col rounded-2xl border border-[#E7E5E4] bg-[#FFFFFF] overflow-hidden sm:w-84.5 sm:h-128.75 lg:w-94 lg:h-125">
         <div className="w-full h-58.75 flex flex-col justify-between p-4 relative ">
           <img src={image} alt={imageAlt} className="w-full h-full absolute inset-0 object-cover z-0" />
@@ -45,7 +45,7 @@ export const ArticleCard = (props: ArticleCardType) => {
           </div>
 
           <div className="w-full h-14.25 flex flex-col gap-4">
-            <div className="w-81.5 h-px bg-[#E2E2DA]"></div>
+            <div className="w-full h-px bg-[#E2E2DA]"></div>
 
             <div className="w-full h-10 flex gap-3">
               <div className="w-10 h-10 bg-[#ECFDF5] rounded-[100%] flex justify-center items-center font-bold text-xs leading-[145%] text-[#065F46]">{initials}</div>
