@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Clock } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
+import { categoryColors } from "@/lib/category-colors";
 
 type ArticleCardType = {
   id: number;
@@ -29,7 +30,7 @@ export const ArticleCard = (props: ArticleCardType) => {
       <div className="w-87.5 h-125 flex flex-col rounded-2xl border border-[#E7E5E4] bg-[#FFFFFF] overflow-hidden sm:w-84.5 sm:h-128.75 lg:w-94 lg:h-125">
         <div className="w-full h-58.75 flex flex-col justify-between p-4 relative ">
           <img src={image} alt={imageAlt} className="w-full h-full absolute inset-0 object-cover z-0" />
-          <div className="w-fit h-6.75 flex justify-center items-center rounded-[100px] py-1.5 px-3 bg-[#ECFDF5] font-bold text-[10px] leading-[145%] text-[#065F46] z-1">{category}</div>
+          <div className={`w-fit h-6.75 flex justify-center items-center rounded-[100px] py-1.5 px-3 font-bold text-[10px] leading-[145%] ring-1 z-1 ${categoryColors[category] ?? "bg-stone-50 text-stone-800 ring-stone-200"}`}>{category}</div>
           <div className="w-19.75 h-4.25 flex gap-1.5 z-1">
             <Clock className="w-3.5 h-3.5 text-[#FFFFFF]" />
 

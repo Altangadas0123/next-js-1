@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "@/data/news.json";
 import { ArticleCard } from "@/components/ArticleCard";
+import { categoryColors } from "@/lib/category-colors";
 
 type ArticleDetailPageType = {
   params: Promise<{ slug: string }>;
@@ -50,8 +51,8 @@ const formattedDate = new Date(article.date).toLocaleDateString("en-US", {
       <div className="w-full h-px bg-[#E2E2DA]"></div>
 
       <div className="w-full h-fit pt-10 pb-8 flex flex-col gap-5">
-        <div className="w-37.75 flex items-center gap-3">
-          <p className="w-fit h-6.75 flex justify-center items-center rounded-[100px] py-1.5 px-3 bg-[#ECFDF5] font-bold text-[10px] leading-[145%] text-[#065F46] z-1 uppercase">{article.category}</p>
+        <div className="w-fit flex items-center gap-3">
+          <p className={`w-fit h-6.75 flex justify-center items-center rounded-[100px] py-1.5 px-3 font-bold text-[10px] leading-[145%] uppercase ring-1 z-1 ${categoryColors[article.category] ?? "bg-stone-50 text-stone-800 ring-stone-200"}`}>{article.category}</p>
           <p className="w-19.25 h-4 font-normal text-[11px] leading-[145%] text-[#65675F]">— THE DAILY</p>
         </div>
         <h1 className="w-full h-fit font-bold text-4xl leading-[112%] text-[#0C0A09] sm:text-5xl">	{article.title}</h1>

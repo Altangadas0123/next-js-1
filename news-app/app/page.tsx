@@ -1,6 +1,7 @@
-import data from "@/data/news.json";
+// import data from "@/data/news.json";
+import { NewsList } from "@/components/NewsList";
 
-import { ArticleCard } from "@/components/ArticleCard";
+// import { ArticleCard } from "@/components/ArticleCard";
 // rafce
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         <h4 className="hidden font-normal text-xs leading-[145%] text-[#65675F] sm:block lg:block">Big ideas. Fresh voices. Worth your time.</h4>
       </header>
 
-      <nav className="w-full h-40 pt-6 flex flex-col gap-1 sm:h-23.75">
+      {/* <nav className="w-full h-40 pt-6 flex flex-col gap-1 sm:h-23.75">
         <div className="w-full h-px bg-[#E2E2DA]"></div>
 
         <div className="w-76.25 h-fit py-3 flex gap-1 sm:w-147">
@@ -36,9 +37,10 @@ const Home = () => {
         </div>
 
         <div className="w-full h-px bg-[#E2E2DA]"></div>
-      </nav>
+      </nav> */}
+      <NewsList />
 
-      <div className="w-full h-fit py-5 ">
+      {/* <div className="w-full h-fit py-5 ">
         <p className="w-29.25 h-4.25 font-normal text-xs leading-[145%] text-[#65675F]">20 stories to explore</p>
       </div>
 
@@ -58,7 +60,7 @@ const Home = () => {
             content={article.content}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
