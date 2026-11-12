@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Noto_Serif } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoSerif = Noto_Serif({
+  variable: "--font-noto-serif",
   subsets: ["latin"],
 });
 
@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${notoSerif.variable} h-full antialiased`}>
       <body className="bg-[#FFFFFF] w-screen h-fit flex flex-col items-center">
         <div className="w-97.5 h-fit flex flex-col bg-[#FAF9F6] px-5 sm:w-3xl sm:px-8 lg:w-360 lg:px-32">
           {children}
           <footer className="w-75 h-33.25 flex items-center justify-between py-9 ">
             <div className="w-55 h-fit">
-              <p className="w-39.5 h-11 font-bold text-3xl leading-[145%] text-[#22241F]">the daily ▧</p>
+              <p className="w-fit h-11 font-bold text-3xl leading-[145%] text-[#22241F]">the daily ▧</p>
               <p className="w-44.25 h-4.25 font-normal text-xs leading-[145%] text-[#65675F]">A fresh perspective. Every day.</p>
             </div>
             <p className="w-20 h-4.25 font-normal text-xs leading-[145%] text-[#22241F]">Back to top ↑</p>

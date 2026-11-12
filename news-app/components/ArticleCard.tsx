@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Clock } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
 
-
 type ArticleCardType = {
   id: number;
   slug: string;
