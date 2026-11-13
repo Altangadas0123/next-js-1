@@ -1,4 +1,3 @@
-// import { Link } from "next/legacy/";
 import Link from "next/link";
 import { Clock } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";

@@ -1,7 +1,6 @@
-// import data from "@/data/news.json";
 import { NewsList } from "@/components/NewsList";
 
-// import { ArticleCard } from "@/components/ArticleCard";
+
 // rafce
 const Home = () => {
   return (
@@ -14,53 +13,8 @@ const Home = () => {
         <h4 className="hidden font-normal text-xs leading-[145%] text-[#65675F] sm:block lg:block">Big ideas. Fresh voices. Worth your time.</h4>
       </header>
 
-      {/* <nav className="w-full h-40 pt-6 flex flex-col gap-1 sm:h-23.75">
-        <div className="w-full h-px bg-[#E2E2DA]"></div>
-
-        <div className="w-76.25 h-fit py-3 flex gap-1 sm:w-147">
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">All stories</button>
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">World</button>
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">Technology</button>
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">Culture</button>
-
-          <button className="hidden w-fit h-9.25 rounded-sm py-2.5 px-3 justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] sm:flex">Travel</button>
-          <button className="hidden w-fit h-9.25 rounded-sm py-2.5 px-3 justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] sm:flex">Design</button>
-          <button className="hidden w-fit h-9.25 rounded-sm py-2.5 px-3 justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] sm:flex">Science</button>
-          <button className="hidden w-fit h-9.25 rounded-sm py-2.5 px-3 justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] sm:flex">Business</button>
-        </div>
-
-        <div className="w-69.75 h-fit py-3 flex gap-1 sm:hidden">
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">Travel</button>
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">Design</button>
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">Science</button>
-          <button className="w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] text-[#65675F] ">Business</button>
-        </div>
-
-        <div className="w-full h-px bg-[#E2E2DA]"></div>
-      </nav> */}
       <NewsList />
 
-      {/* <div className="w-full h-fit py-5 ">
-        <p className="w-29.25 h-4.25 font-normal text-xs leading-[145%] text-[#65675F]">20 stories to explore</p>
-      </div>
-
-      <div className="w-full h-fit gap-10 grid sm:grid-cols-2 lg:grid-cols-3">
-        {data.map((article) => (
-          <ArticleCard
-            key={article.id}
-            id={article.id}
-            slug={article.slug}
-            title={article.title}
-            description={article.description}
-            category={article.category}
-            image={article.image}
-            imageAlt={article.imageAlt}
-            author={article.author}
-            date={article.date}
-            content={article.content}
-          />
-        ))}
-      </div> */}
     </div>
   );
 };
