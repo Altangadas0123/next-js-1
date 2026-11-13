@@ -22,7 +22,7 @@ export const NewsList = () => {
               key={category}
               onClick={() => setSelected(category)}
               className={`w-fit h-9.25 rounded-sm py-2.5 px-3 flex justify-center items-center font-normal text-xs leading-[145%] cursor-pointer ${
-                selected === category ? "bg-[#22241F] text-[#FFFFFF]" : "text-[#65675F] hover:bg-[#EFEDE6]"
+                selected === category ? "bg-[#22241F] text-[#FFFFFF]" : "text-[#65675F] hover:bg-[#035933]"
               }`}
             >
               {category}
